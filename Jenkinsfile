@@ -5,7 +5,6 @@ pipeline {
             steps {
                 sh """     
                      pwd 
-                     aws s3 cp ./ --recursive s3://flawless-auto-deployment
                 """
             } 
         } 
