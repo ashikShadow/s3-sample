@@ -5,6 +5,8 @@ pipeline {
             steps {
                 sh """        
                     aws s3 ls
+                    aws s3 rm s3://flawless-auto-deployment --recursive
+                    ls
                 """
             } 
         } 
