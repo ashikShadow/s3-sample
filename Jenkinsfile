@@ -6,7 +6,7 @@ pipeline {
                 sh """        
                     aws s3 ls
                     aws s3 rm s3://flawless-auto-deployment --recursive
-                    ls
+                    aws s3 cp . s3://flawless-auto-deployment
                 """
             } 
         } 
